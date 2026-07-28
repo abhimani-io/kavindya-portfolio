@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Kavindya | IT & Software Engineering Portfolio</title>
+  <meta name="description"
+    content="Explore Kavindya's technical projects — full-stack web apps, cloud dashboards, network automation tools, and more. All include GitHub source code and detailed case studies." />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232563EB'/><text y='22' x='7' font-size='18' font-family='monospace' fill='white'>K</text></svg>" />
+</head>
+
+<body>
+  <!-- Ambient glowing background lights -->
+  <div class="ambient-background">
+    <div class="ambient-glow ambient-glow--1"></div>
+    <div class="ambient-glow ambient-glow--2"></div>
+    <div class="ambient-glow ambient-glow--3"></div>
+  </div>
+  <!-- ═══ NAV ═══ -->
+  <header>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="container nav__inner">
+        <a href="index.html" class="nav__logo">Kavindya Abhimani</a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="projects.html" class="nav__link active">Projects</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="assets/resume.pdf" target="_blank" rel="noopener" class="nav__resume-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Resume (PDF)
+          </a>
+          <button class="nav__hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="nav__mobile" role="menu">
+      <a href="index.html" class="nav__mobile-link" role="menuitem">Home</a>
+      <a href="projects.html" class="nav__mobile-link active" role="menuitem">Projects</a>
+      <a href="about.html" class="nav__mobile-link" role="menuitem">About</a>
+      <a href="contact.html" class="nav__mobile-link" role="menuitem">Contact</a>
+      <a href="assets/resume.pdf" target="_blank" rel="noopener" class="nav__mobile-resume" role="menuitem">↓ Download
+        Resume (PDF)</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══ PAGE HERO ═══ -->
+    <section class="page-hero" aria-labelledby="projects-page-heading">
+      <div class="container page-hero__content">
+        <span class="section-label" style="justify-content:center; margin-bottom:var(--sp-4);">Portfolio</span>
+        <h1 class="page-hero__title animate-fade-in-up" id="projects-page-heading">
+          Projects &amp; <span class="text-gradient">Case Studies</span>
+        </h1>
+
+      </div>
+    </section>
+
+    <!-- ═══ FILTER TABS ═══ -->
+    <section class="section section--white" aria-label="Project filter and listings">
+      <div class="container">
+
+        <div class="filter-tabs" role="group" aria-label="Filter projects by technology">
+          <button class="filter-tab active" data-filter="all" id="filter-all">All Projects</button>
+          <button class="filter-tab" data-filter="react" id="filter-react">React</button>
+          <button class="filter-tab" data-filter="flutter" id="filter-flutter">Flutter</button>
+          <button class="filter-tab" data-filter="javascript" id="filter-javascript">JavaScript</button>
+          <button class="filter-tab" data-filter="node" id="filter-node">Node.js</button>
+          <button class="filter-tab" data-filter="firebase" id="filter-firebase">Firebase</button>
+        </div>
+
+        <!-- ─── PROJECT 1 ─── -->
+        <article class="project-full reveal" data-tags="flutter dart firebase"
+          aria-label="AR Art Visualization and Marketplace App">
+          <div class="project-full__header">
+            <div class="project-full__icon">
+              <img src="images/ar-project-icon.png" alt="AR Project Icon" class="project-icon-img" />
+            </div>
+            <div class="project-full__meta">
+              <h2 class="project-full__title">AR Art Visualization and Marketplace App</h2>
+              <div class="project-full__badges">
+                <span class="badge badge--blue">Flutter</span>
+                <span class="badge badge--blue">Dart</span>
+                <span class="badge badge--blue">Firebase</span>
+                <span class="badge badge--blue">Android</span>
+                <span class="badge badge--blue">AR</span>
+              </div>
+            </div>
+            <div class="project-full__status">
+              <span class="status-dot">Live</span>
+              <span class="badge badge--blue">Academic + Personal</span>
+            </div>
+          </div>
+
+          <div class="project-full__body">
+            <div class="project-full__main">
+              <p class="project-full__section-title">Overview</p>
+              <p class="project-full__description">
+                A mobile application that enables users to visualize artwork in their own space before purchase, while
+                providing sellers with a complete set of tools to manage an online art business. Built for Android using
+                Flutter and powered by Firebase services.
+              </p>
+
+              <p class="project-full__section-title">Technical Highlights</p>
+              <ul class="project-full__highlights">
+                <li class="project-full__highlight">
+                  <span class="project-full__highlight-icon">✦</span>
+                  Implemented image-based AR visualization overlaying artwork onto a live camera feed for realistic
+                  previewing on real walls.
+                </li>
+                <li class="project-full__highlight">
+                  <span class="project-full__highlight-icon">✦</span>
+                  Built a role-based system supporting General Consumers, Art Sellers (Go Creator), and unauthenticated
+                  Guest Users with tailored permissions.
+                </li>
+                <li class="project-full__highlight">
+                  <span class="project-full__highlight-icon">✦</span>
+                  Integrated a complete marketplace with wishlist, cart management, and secure checkout via the PayHere
+                  payment gateway.
+                </li>
+                <li class="project-full__highlight">
+                  <span class="project-full__highlight-icon">✦</span>
+                  Developed a dedicated Art Seller workspace for inventory management, order tracking, and customer
+                  communication.
+                </li>
+                <li class="project-full__highlight">
+                  <span class="project-full__highlight-icon">✦</span>
+                  Utilized Firebase Authentication, Cloud Firestore, and Cloud Storage for a scalable, real-time backend
+                  architecture.
+                </li>
+              </ul>
+
+              <div class="project-full__actions" style="flex-direction:row; flex-wrap:wrap; gap:var(--sp-3);">
+                <a href="#" class="btn btn--primary" id="p1-demo-btn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                  Live Demo ↗
+                </a>
+                <a href="https://github.com/abhimani-io/ArtSpace-Preview" class="btn btn--secondary" id="p1-github-btn">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                  </svg>
+                  View Source Code ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="project-full__sidebar">
+              <div class="project-full__impact-box">
+                <p class="project-full__impact-title"><svg viewBox="0 0 24 24" width="18" height="18"
+                    stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                    style="margin-right:6px; vertical-align:-3px;">
+                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                    <polyline points="17 6 23 6 23 12"></polyline>
+                  </svg>Key Features</p>
+                <div class="impact-stat">
+                  <span class="impact-stat__value">AR</span>
+                  <span class="impact-stat__label">Live Artwork Preview</span>
+                </div>
+                <div class="impact-stat">
+                  <span class="impact-stat__value">3</span>
+                  <span class="impact-stat__label">Distinct User Roles</span>
+                </div>
+                <div class="impact-stat">
+                  <span class="impact-stat__value">100%</span>
+                  <span class="impact-stat__label">Real-time Firebase Sync</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ─── PROJECT 2 ─── -->
+        <article class="project-full reveal" data-tags="html css javascript netlify"
+          aria-label="Personal Art Portfolio & Business Website">
+          <div class="project-full__header">
+            <div class="project-full__icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a10 10 0 0 0-10 10c0 5.5 4.5 10 10 10 5.5 0 10-4.5 10-10C22 7.5 17.5 2 12 2z"></path>
+              </svg></div>
+            <div class="project-full__meta">
+              <h2 class="project-full__title">Personal Art Portfolio & Business Website</h2>
+              <div class="project-full__badges">
+                <span class="badge badge--blue">HTML5</span>
+                <span class="badge badge--blue">CSS3</span>
+                <span class="badge badge--blue">JavaScript</span>
+                <span class="badge badge--blue">Netlify</span>
+              </div>
+            </div>
+            <div class="project-full__status">
+              <span class="status-dot">Live</span>
+              <span class="badge badge--green">Personal Business</span>
+            </div>
+          </div>
+
+          <div class="project-full__body">
+            <div class="project-full__main">
+              <p class="project-full__section-title">Overview</p>
+              <p class="project-full__description">
+                Developed and deployed a custom portfolio website to showcase personal artwork, providing a centralized
+                platform for customers to explore pieces and contact me directly for business inquiries. Hosted securely
+                on Netlify.
+              </p>
+
+              <p class="project-full__section-title">Technical Highlights</p>
+              <ul class="project-full__highlights">
+                <li class="project-full__highlight">
+                  <span class="project-full__highlight-icon">✦</span>
+                  Designed a responsive, visually appealing front-end using semantic HTML5 and modern CSS3 layouts.
+                </li>
+                <li class="project-full__highlight">
+                  <span class="project-full__highlight-icon">✦</span>
+                  Implemented interactive galleries and smooth UI transitions using Vanilla JavaScript.
+                </li>
+                <li class="project-full__highlight">
+                  <span class="project-full__highlight-icon">✦</span>
+                  Deployed the site on Netlify for fast global content delivery and continuous deployment workflows.
+                </li>
+                <li class="project-full__highlight">
+                  <span class="project-full__highlight-icon">✦</span>
+                  Integrated a direct contact mechanism to streamline commission requests and potential sales.
+                </li>
+              </ul>
+
+              <div class="project-full__actions" style="flex-direction:row; flex-wrap:wrap; gap:var(--sp-3);">
+                <a href="https://startling-alfajores-4783ea.netlify.app/?sfnsn=wa" class="btn btn--primary"
+                  id="p2-demo-btn">Live Demo ↗</a>
+                <a href="https://github.com/abhimani-io/art-portfolio" class="btn btn--secondary"
+                  id="p2-github-btn">View Source Code ↗</a>
+              </div>
+            </div>
+
+            <div class="project-full__sidebar">
+              <div class="project-full__impact-box">
+                <p class="project-full__impact-title"><svg viewBox="0 0 24 24" width="18" height="18"
+                    stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                    style="margin-right:6px; vertical-align:-3px;">
+                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                    <polyline points="17 6 23 6 23 12"></polyline>
+                  </svg>Impact Metrics</p>
+                <div class="impact-stat">
+                  <span class="impact-stat__value">100%</span>
+                  <span class="impact-stat__label">Centralized artwork hub</span>
+                </div>
+                <div class="impact-stat">
+                  <span class="impact-stat__value">Direct</span>
+                  <span class="impact-stat__label">Customer contact channel</span>
+                </div>
+                <div class="impact-stat">
+                  <span class="impact-stat__value">Fast</span>
+                  <span class="impact-stat__label">Global delivery (Netlify)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+
+        <!-- ─── PROJECT 4 ─── -->
+        <article class="project-full reveal" data-tags="react node postgresql"
+          aria-label="Study Planner & Productivity App">
+          <div class="project-full__header">
+            <div class="project-full__icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg></div>
+            <div class="project-full__meta">
+              <h2 class="project-full__title">Study Planner &amp; Productivity Web App</h2>
+              <div class="project-full__badges">
+                <span class="badge badge--blue">React</span>
+                <span class="badge badge--blue">Node.js</span>
+                <span class="badge badge--blue">PostgreSQL</span>
+                <span class="badge badge--blue">Docker</span>
+                <span class="badge badge--blue">REST API</span>
+              </div>
+            </div>
+            <div class="project-full__status">
+              <span class="status-dot">Still Contributing</span>
+              <span class="badge badge--green">Personal Project</span>
+            </div>
+          </div>
+
+          <div class="project-full__body">
+            <div class="project-full__main">
+              <p class="project-full__section-title">Overview</p>
+              <p class="project-full__description">
+                A web-based study planner targeting university students — features task scheduling, Pomodoro timer,
+                progress tracking, and calendar view. Built with a React SPA frontend and a RESTful Node.js API
+                backed by PostgreSQL.
+              </p>
+
+              <p class="project-full__section-title">Technical Highlights</p>
+              <ul class="project-full__highlights">
+                <li class="project-full__highlight">
+                  <span class="project-full__highlight-icon">✦</span>
+                  Designed a normalized PostgreSQL schema with 6 tables — users, tasks, sessions, tags, goals, and logs.
+                </li>
+                <li class="project-full__highlight">
+                  <span class="project-full__highlight-icon">✦</span>
+                  Implemented drag-and-drop task re-ordering using the HTML5 Drag API with optimistic UI updates.
+                </li>
+                <li class="project-full__highlight">
+                  <span class="project-full__highlight-icon">✦</span>
+                  Wrote 40+ unit and integration tests using Jest and Supertest, maintaining &gt;80% code coverage.
+                </li>
+              </ul>
+
+              <div class="project-full__actions" style="flex-direction:row; flex-wrap:wrap; gap:var(--sp-3);">
+                <a href="#" class="btn btn--primary" id="p4-demo-btn">Live Demo ↗</a>
+                <a href="#" class="btn btn--secondary" id="p4-github-btn">View Source Code ↗</a>
+              </div>
+            </div>
+
+            <div class="project-full__sidebar">
+              <div class="project-full__impact-box">
+                <p class="project-full__impact-title"><svg viewBox="0 0 24 24" width="18" height="18"
+                    stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                    style="margin-right:6px; vertical-align:-3px;">
+                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                    <polyline points="17 6 23 6 23 12"></polyline>
+                  </svg>Quality Metrics</p>
+                <div class="impact-stat">
+                  <span class="impact-stat__value">80%+</span>
+                  <span class="impact-stat__label">Unit/integration test coverage</span>
+                </div>
+                <div class="impact-stat">
+                  <span class="impact-stat__value">40+</span>
+                  <span class="impact-stat__label">Automated tests written</span>
+                </div>
+                <div class="impact-stat">
+                  <span class="impact-stat__value">6</span>
+                  <span class="impact-stat__label">Normalized DB tables</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--alt" style="text-align:center;" aria-labelledby="projects-cta-heading">
+      <div class="container" style="max-width:580px;">
+        <span class="section-label" style="justify-content:center;">Ready to talk?</span>
+        <h2 class="section__title" id="projects-cta-heading">Want a live walkthrough?</h2>
+        <p class="section__subtitle" style="margin-bottom:var(--sp-8);">I'm happy to demo any of these projects live and
+          walk you through my technical decisions.</p>
+        <a href="contact.html" class="btn btn--primary btn--lg" id="projects-contact-cta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          Get in Touch
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <a href="index.html" class="footer__logo">Kavindya Abhimani</a>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="index.html" class="footer__link">Home</a>
+        <a href="projects.html" class="footer__link">Projects</a>
+        <a href="about.html" class="footer__link">About</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener" class="footer__link">Resume ↗</a>
+      </nav>
+      <div class="footer__social">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kavyaabhimani@gmail.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Email" id="footer-email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/kavindya-abhimani-10a155405/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn" id="footer-linkedin">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+        <a href="https://github.com/abhimani-io" class="footer__social-link" aria-label="GitHub" id="footer-github">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+          </svg>
+        </a>
+      </div>
+      <div class="footer__divider"></div>
+      <p class="footer__copy">Designed &amp; Built by Kavindya © 2026</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

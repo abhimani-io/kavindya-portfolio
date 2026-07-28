@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kavindya — IT & Software Engineering Student | Portfolio</title>
+  <meta name="description"
+    content="Hi, I'm Kavindya — an IT and Software Engineering student passionate about full-stack development, cloud systems, and building tools that solve real problems. Available for internships." />
+  <meta name="keywords"
+    content="software engineering intern, IT intern, full-stack developer, web development, portfolio, Kavindya" />
+  <meta property="og:title" content="Kavindya — IT & Software Engineering Portfolio" />
+  <meta property="og:description" content="Clean code. Practical solutions. Ready to build on Day 1." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="index.html" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232563EB'/><text y='22' x='7' font-size='18' font-family='monospace' fill='white'>K</text></svg>" />
+</head>
+
+<body>
+  <!-- Ambient glowing background lights -->
+  <div class="ambient-background">
+    <div class="ambient-glow ambient-glow--1"></div>
+    <div class="ambient-glow ambient-glow--2"></div>
+    <div class="ambient-glow ambient-glow--3"></div>
+  </div>
+  <!-- ═══════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════ -->
+  <header>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="container nav__inner">
+        <a href="index.html" class="nav__logo">Kavindya Abhimani</a>
+
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="nav__link active">Home</a></li>
+          <li><a href="projects.html" class="nav__link">Projects</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+
+        <div class="nav__actions">
+          <a href="assets/resume.pdf" target="_blank" rel="noopener" class="nav__resume-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Resume (PDF)
+          </a>
+          <button class="nav__hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="nav__mobile" role="menu" aria-label="Mobile navigation">
+      <a href="index.html" class="nav__mobile-link active" role="menuitem">Home</a>
+      <a href="projects.html" class="nav__mobile-link" role="menuitem">Projects</a>
+      <a href="about.html" class="nav__mobile-link" role="menuitem">About</a>
+      <a href="contact.html" class="nav__mobile-link" role="menuitem">Contact</a>
+      <a href="assets/resume.pdf" target="_blank" rel="noopener" class="nav__mobile-resume" role="menuitem">
+        ↓ Download Resume (PDF)
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════
+         HERO SECTION
+    ═══════════════════════════════════ -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero__glow hero__glow--blue"></div>
+      <div class="hero__glow hero__glow--teal"></div>
+      <div class="hero__glow hero__glow--purple"></div>
+
+      <!-- Network Animation Canvas -->
+      <canvas id="network-canvas" aria-hidden="true"></canvas>
+
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <div class="hero__dev-tag animate-fade-in-up">
+              <svg class="status-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"
+                style="width: 16px; height: 16px; color: var(--color-brand);">
+                <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="currentColor" />
+              </svg>
+              <span class="tag-text">Open to Internship Opportunities</span>
+            </div>
+
+            <h1 class="hero__title" id="hero-heading">
+              <span class="animate-fade-in-up" style="display: block; animation-fill-mode: both;">Adaptive
+                Thinking.</span>
+              <span class="animate-fade-in-up animate-delay-1"
+                style="display: block; animation-fill-mode: both;">Practical Code.</span>
+              <span class="text-gradient animate-fade-in-up animate-delay-2"
+                style="display: block; white-space: nowrap; animation-fill-mode: both;">User-Focused Solutions.</span>
+            </h1>
+
+            <p class="hero__sub animate-fade-in-up animate-delay-3">
+              <strong>I’m Kavindya Abhimani</strong> — an HNDIT student at SLIATE passionate about Software Engineering,
+              UI/UX Design, and QA. I build functional web &amp; mobile apps with clean code and intuitive design.
+            </p>
+
+            <div class="hero__ctas animate-fade-in-up animate-delay-4">
+              <a href="projects.html" class="btn btn--primary" id="hero-cta-projects">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                View My Projects
+              </a>
+              <a href="contact.html" class="btn btn--secondary" id="hero-cta-contact">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                Contact Me
+              </a>
+            </div>
+
+            <div class="hero__stats animate-fade-in-up animate-delay-5">
+              <div class="hero__stat">
+                <span class="hero__stat-number"><span data-count="5" data-suffix="+">5+</span></span>
+                <span class="hero__stat-label">Projects Built</span>
+              </div>
+              <div class="hero__stat">
+                <span class="hero__stat-number"><span data-count="3" data-suffix="+">3+</span></span>
+                <span class="hero__stat-label">Certifications</span>
+              </div>
+              <div class="hero__stat">
+                <span class="hero__stat-number"><span data-count="2" data-suffix="">2</span></span>
+                <span class="hero__stat-label">Years Coding</span>
+              </div>
+              <div class="hero__stat">
+                <span class="hero__stat-number"><span data-count="100" data-suffix="%">100%</span></span>
+                <span class="hero__stat-label">Remote Ready</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__image animate-fade-in-up animate-delay-3">
+            <div class="hero__image-wrapper">
+              <img src="images/profile_transparent_v2.png" alt="Kavindya - Profile Photo" />
+
+              <!-- React blob icon -->
+              <div class="blob-icon blob-icon--react">
+                <svg viewBox="0 0 180 180" width="72" height="72" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="90" cy="90" r="10" fill="#61DAFB" />
+                  <ellipse cx="90" cy="90" rx="45" ry="16" fill="none" stroke="#61DAFB" stroke-width="6" />
+                  <ellipse cx="90" cy="90" rx="45" ry="16" fill="none" stroke="#61DAFB" stroke-width="6"
+                    transform="rotate(60 90 90)" />
+                  <ellipse cx="90" cy="90" rx="45" ry="16" fill="none" stroke="#61DAFB" stroke-width="6"
+                    transform="rotate(120 90 90)" />
+                </svg>
+              </div>
+
+              <!-- Flutter blob icon -->
+              <div class="blob-icon blob-icon--flutter">
+                <svg viewBox="0 0 180 180" width="72" height="72" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M85 52 L122 89 L100 111 L40 52 Z" fill="#39C5F6" />
+                  <path d="M80 116 L124 72 L124 122 L102 144 Z" fill="#01579B" />
+                  <path d="M40 136 L100 76 L120 96 L76 144 Z" fill="#39C5F6" />
+                </svg>
+              </div>
+
+              <!-- Figma blob icon -->
+              <div class="blob-icon blob-icon--figma">
+                <svg viewBox="0 0 180 180" width="72" height="72" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M80 140 A 18 18 0 0 1 62 122 A 18 18 0 0 1 80 104 L 80 140 Z" fill="#0ACF83" />
+                  <path d="M62 86 A 18 18 0 0 1 80 68 L 80 104 L 62 104 A 18 18 0 0 1 62 86 Z" fill="#A259FF" />
+                  <path d="M62 50 A 18 18 0 0 1 80 32 L 80 68 L 62 68 A 18 18 0 0 1 62 50 Z" fill="#F24E1E" />
+                  <path d="M80 32 L 98 32 A 18 18 0 0 1 98 68 L 80 68 L 80 32 Z" fill="#FF7262" />
+                  <circle cx="98" cy="86" r="18" fill="#1ABCFE" />
+                </svg>
+              </div>
+
+              <!-- Photoshop blob icon -->
+              <div class="blob-icon blob-icon--photoshop">
+                <svg viewBox="0 0 180 180" width="72" height="72" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="40" y="40" width="100" height="100" rx="16" fill="#001E36" />
+                  <path
+                    d="M55 65 V115 H65 V98 H75 C88 98 94 92 94 82 C94 72 88 65 75 65 H55 M65 75 H75 C80 75 83 77 83 82 C83 87 80 88 75 88 H65 V75"
+                    fill="#31A8FF" />
+                  <path
+                    d="M102 90 C102 82 108 77 118 77 C126 77 130 80 130 84 L122 88 C120 86 118 85 115 85 C112 85 110 87 110 89 C110 93 128 92 128 102 C128 110 122 115 113 115 C103 115 100 110 98 105 L106 102 C108 105 110 107 113 107 C118 107 120 105 120 102 C120 97 102 98 102 90"
+                    fill="#31A8FF" />
+                </svg>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         TECHNICAL TOOLKIT
+    ═══════════════════════════════════ -->
+    <section class="toolkit" id="toolkit" aria-labelledby="toolkit-heading">
+      <div class="container">
+        <!-- Premium Technical Banner -->
+        <div class="toolkit-banner animate-fade-in-up">
+          <div class="toolkit-banner__bg">
+            <div class="toolkit-banner__glow"></div>
+          </div>
+
+          <div class="toolkit-banner__content">
+            <div class="toolkit-banner__icon">
+              <!-- High-tech CPU / System Core Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+              </svg>
+            </div>
+
+            <div class="toolkit-banner__text">
+              <span class="toolkit-banner__label">System Capabilities</span>
+              <h2 class="toolkit-banner__title">Technical Toolkit</h2>
+            </div>
+
+            <!-- Animated Data Visualizer -->
+            <div class="toolkit-banner__visual">
+              <div class="toolkit-banner__bar" style="height: 100%; animation-delay: 0.1s"></div>
+              <div class="toolkit-banner__bar" style="height: 60%; animation-delay: 0.3s"></div>
+              <div class="toolkit-banner__bar" style="height: 90%; animation-delay: 0.5s"></div>
+              <div class="toolkit-banner__bar" style="height: 40%; animation-delay: 0.2s"></div>
+              <div class="toolkit-banner__bar" style="height: 80%; animation-delay: 0.4s"></div>
+            </div>
+          </div>
+
+          <!-- Merged grid inside banner -->
+          <div class="toolkit__grid" style="margin-top: 40px; position: relative; z-index: 2;">
+
+            <div class="toolkit__category reveal">
+              <div class="toolkit__cat-icon toolkit__cat-icon--blue">
+                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <p class="toolkit__cat-title">Languages</p>
+              <div class="toolkit__badges">
+                <span class="badge badge--blue">Java</span>
+                <span class="badge badge--blue">C#</span>
+                <span class="badge badge--blue">Python</span>
+                <span class="badge badge--blue">JavaScript</span>
+                <span class="badge badge--blue">Dart</span>
+                <span class="badge badge--blue">SQL</span>
+              </div>
+            </div>
+
+            <div class="toolkit__category reveal reveal--delay-1">
+              <div class="toolkit__cat-icon toolkit__cat-icon--teal">
+                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                </svg>
+              </div>
+              <p class="toolkit__cat-title">Frontend</p>
+              <div class="toolkit__badges">
+                <span class="badge badge--blue">HTML5</span>
+                <span class="badge badge--blue">CSS3</span>
+                <span class="badge badge--blue">React</span>
+              </div>
+            </div>
+
+            <div class="toolkit__category reveal reveal--delay-2">
+              <div class="toolkit__cat-icon toolkit__cat-icon--slate">
+                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <p class="toolkit__cat-title">Backend</p>
+              <div class="toolkit__badges">
+                <span class="badge badge--blue">Node.js</span>
+                <span class="badge badge--blue">Firebase</span>
+              </div>
+            </div>
+
+            <div class="toolkit__category reveal">
+              <div class="toolkit__cat-icon toolkit__cat-icon--blue">
+                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <p class="toolkit__cat-title">Mobile</p>
+              <div class="toolkit__badges">
+                <span class="badge badge--blue">Flutter</span>
+                <span class="badge badge--green">Android Studio</span>
+              </div>
+            </div>
+
+            <div class="toolkit__category reveal reveal--delay-1">
+              <div class="toolkit__cat-icon toolkit__cat-icon--teal">
+                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <p class="toolkit__cat-title">Database</p>
+              <div class="toolkit__badges">
+                <span class="badge badge--teal">MySQL</span>
+                <span class="badge badge--orange">Firebase Firestore</span>
+              </div>
+            </div>
+
+            <div class="toolkit__category reveal reveal--delay-2">
+              <div class="toolkit__cat-icon toolkit__cat-icon--slate">
+                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                  </path>
+                </svg>
+              </div>
+              <p class="toolkit__cat-title">Tools</p>
+              <div class="toolkit__badges">
+                <span class="badge badge--slate">Git</span>
+                <span class="badge badge--slate">GitHub</span>
+                <span class="badge badge--purple">VS Code</span>
+                <span class="badge badge--purple">Figma</span>
+                <span class="badge badge--blue">WordPress</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         FEATURED PROJECTS
+    ═══════════════════════════════════ -->
+    <section class="section section--alt" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="projects-banner animate-fade-in-up">
+          <div class="projects-banner__bg">
+            <div class="projects-banner__glow"></div>
+          </div>
+
+          <div class="projects-banner__content" style="justify-content: center; text-align: center;">
+            <div class="projects-banner__text" style="flex-grow: 0;">
+              <h2 class="projects-banner__title" id="projects-heading" style="margin-bottom: 0;">Selected Projects</h2>
+            </div>
+          </div>
+
+          <div style="margin-top: 40px; position: relative; z-index: 2;">
+            <div class="projects-grid">
+
+              <!-- Card 1 -->
+              <article class="project-card reveal" aria-label="AR Art Visualization and Marketplace App">
+                <div class="project-card__header">
+                  <div class="project-card__icon">
+                    <img src="images/ar-project-icon.png" alt="AR Project Icon" class="project-icon-img" />
+                  </div>
+                  <span class="project-card__number">01</span>
+                </div>
+                <div class="project-card__body">
+                  <h3 class="project-card__title">AR Art Visualization and Marketplace App</h3>
+                  <div class="project-card__badges">
+                    <span class="badge badge--blue">Flutter</span>
+                    <span class="badge badge--blue">Dart</span>
+                    <span class="badge badge--blue">Firebase</span>
+                    <span class="badge badge--blue">Android</span>
+                    <span class="badge badge--blue">AR</span>
+                  </div>
+                  <p class="project-card__summary">
+                    A mobile application that enables users to visualize artwork in their own space before purchase,
+                    while
+                    providing sellers with a complete set of tools to manage an online art business.
+                  </p>
+                  <div class="project-card__impact">
+                    <span class="project-card__impact-icon"><svg viewBox="0 0 24 24" width="18" height="18"
+                        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                      </svg></span>
+                    <p class="project-card__impact-text">Implemented image-based AR visualization overlaying artwork
+                      onto a
+                      live camera feed for realistic previewing on real walls.</p>
+                  </div>
+                </div>
+                <div class="project-card__footer">
+                  <a href="projects.html" class="btn btn--primary" id="proj1-detail">View Details ↗</a>
+                  <a href="https://github.com/abhimani-io/ArtSpace-Preview" class="btn btn--secondary"
+                    id="proj1-github">Source Code ↗</a>
+                </div>
+              </article>
+
+              <!-- Card 2 -->
+              <article class="project-card reveal reveal--delay-1"
+                aria-label="Personal Art Portfolio & Business Website">
+                <div class="project-card__header">
+                  <div class="project-card__icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                      stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                      <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                      <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+                      <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                      <path
+                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.992 6.012 17.5 2 12 2z" />
+                    </svg></div>
+                  <span class="project-card__number">02</span>
+                </div>
+                <div class="project-card__body">
+                  <h3 class="project-card__title">Personal Art Portfolio & Business Website</h3>
+                  <div class="project-card__badges">
+                    <span class="badge badge--blue">HTML5</span>
+                    <span class="badge badge--blue">CSS3</span>
+                    <span class="badge badge--blue">JavaScript</span>
+                    <span class="badge badge--blue">Netlify</span>
+                  </div>
+                  <p class="project-card__summary">
+                    Developed and deployed a custom portfolio website on Netlify to showcase personal artwork, providing
+                    a
+                    centralized platform for customers to explore pieces and contact me directly for business inquiries.
+                  </p>
+                  <div class="project-card__impact">
+                    <span class="project-card__impact-icon"><svg viewBox="0 0 24 24" width="18" height="18"
+                        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                      </svg></span>
+                    <p class="project-card__impact-text">Established a professional online presence to attract potential
+                      clients and streamline commission requests.</p>
+                  </div>
+                </div>
+                <div class="project-card__footer">
+                  <a href="https://startling-alfajores-4783ea.netlify.app/?sfnsn=wa" class="btn btn--primary"
+                    id="proj2-demo">Live Demo ↗</a>
+                  <a href="https://github.com/abhimani-io/art-portfolio" class="btn btn--secondary"
+                    id="proj2-github">Source
+                    Code ↗</a>
+                </div>
+              </article>
+
+              <!-- Card 3 -->
+              <article class="project-card reveal reveal--delay-2" aria-label="Study Planner & Productivity App">
+                <div class="project-card__header">
+                  <div class="project-card__icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                      stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                      <path d="M9 16l2 2 4-4"></path>
+                    </svg></div>
+                  <span class="project-card__number">03</span>
+                </div>
+                <div class="project-card__body">
+                  <h3 class="project-card__title">Study Planner &amp; Productivity Web App</h3>
+                  <div class="project-card__badges">
+                    <span class="badge badge--blue">React</span>
+                    <span class="badge badge--blue">Node.js</span>
+                    <span class="badge badge--blue">PostgreSQL</span>
+                    <span class="badge badge--blue">Docker</span>
+                  </div>
+                  <p class="project-card__summary">
+                    A web-based study planner targeting university students — features task scheduling, Pomodoro timer,
+                    progress tracking, and calendar view.
+                  </p>
+                  <div class="project-card__impact">
+                    <span class="project-card__impact-icon"><svg viewBox="0 0 24 24" width="18" height="18"
+                        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                      </svg></span>
+                    <p class="project-card__impact-text">Maintained >80% code coverage across 40+ automated tests using
+                      Jest
+                      and Supertest.</p>
+                  </div>
+                </div>
+                <div class="project-card__footer">
+                  <a href="projects.html" class="btn btn--primary" id="proj3-detail">View Details ↗</a>
+                  <a href="#" class="btn btn--secondary" id="proj3-github">Source Code ↗</a>
+                </div>
+              </article>
+
+            </div>
+
+          </div> <!-- end projects-grid div -->
+          <div style="text-align:center; margin-top: var(--sp-12);" class="reveal">
+            <a href="projects.html" class="btn btn--outline-brand" id="home-view-all">
+              View All Projects →
+            </a>
+          </div>
+        </div> <!-- end projects-banner closing -->
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         WHY HIRE ME
+    ═══════════════════════════════════ -->
+    <section class="why" id="value" aria-labelledby="why-heading">
+      <div class="why__glow why__glow--blue"></div>
+      <div class="why__glow why__glow--teal"></div>
+
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title" id="why-heading">What I bring to your engineering team</h2>
+          <p class="section__subtitle" style="color:#94A3B8;">Skills and habits that make me a low-friction, high-value
+            internship hire.</p>
+        </div>
+
+        <div class="why__grid">
+
+          <div class="why__card reveal">
+            <div class="why__icon why__icon--blue"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg></div>
+            <h3 class="why__card-title">Fast Learner, Low Friction</h3>
+            <p class="why__card-text">
+              Reads docs carefully, asks smart questions, and picks up new stacks quickly.
+              I've independently learned React, Docker, and PostgreSQL outside of coursework —
+              and shipped projects with them within weeks.
+            </p>
+          </div>
+
+          <div class="why__card reveal reveal--delay-1">
+            <div class="why__icon why__icon--teal"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg></div>
+            <h3 class="why__card-title">Production-Minded Habits</h3>
+            <p class="why__card-text">
+              Writes self-documenting code, uses Git branching strategies (feature → dev → main),
+              and maintains clean commit histories. Every project ships with a proper README and
+              setup guide.
+            </p>
+          </div>
+
+          <div class="why__card reveal reveal--delay-2">
+            <div class="why__icon why__icon--white"><svg viewBox="0 0 24 24" width="24" height="24"
+                stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg></div>
+            <h3 class="why__card-title">Strong Team Communicator</h3>
+            <p class="why__card-text">
+              Communicates clearly during standups, values constructive code reviews, and
+              documents decisions so the whole team stays aligned. Comfortable with async
+              communication tools like Slack, Notion, and Linear.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════
+         CTA BANNER
+    ═══════════════════════════════════ -->
+    <section class="section section--white" aria-labelledby="cta-heading">
+      <div class="container" style="text-align:center; max-width: 640px;">
+        <span class="section-label" style="justify-content:center;">Let's Connect</span>
+        <h2 class="section__title" id="cta-heading">Have an open intern role?</h2>
+        <p class="section__subtitle" style="margin-bottom:var(--sp-8);">
+          I'm actively interviewing for upcoming internship opportunities. Reach out — I respond within 24 hours.
+        </p>
+        <div style="display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn--primary btn--lg" id="home-contact-cta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            Get in Touch
+          </a>
+          <a href="projects.html" class="btn btn--secondary btn--lg" id="home-projects-cta">See My Work →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════════════════
+       FLOATING STATUS BADGE
+  ════════════════════════════════════════════════════════════ -->
+  <div class="floating-status animate-fade-in-up">
+    <div class="hero__status">
+      <svg class="tag-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px; color: var(--color-brand);">
+        <polyline points="16 18 22 12 16 6"></polyline>
+        <polyline points="8 6 2 12 8 18"></polyline>
+      </svg>
+      <span class="status-text"><span id="typewriter-text"></span><span class="typewriter-cursor">|</span></span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <a href="index.html" class="footer__logo">Kavindya Abhimani</a>
+
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="index.html" class="footer__link">Home</a>
+        <a href="projects.html" class="footer__link">Projects</a>
+        <a href="about.html" class="footer__link">About</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener" class="footer__link">Resume ↗</a>
+      </nav>
+
+      <div class="footer__social" aria-label="Social links">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kavyaabhimani@gmail.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Email" id="footer-email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/kavindya-abhimani-10a155405/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn" id="footer-linkedin">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+        <a href="https://github.com/abhimani-io" class="footer__social-link" aria-label="GitHub" id="footer-github">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer__divider"></div>
+      <p class="footer__copy">Designed &amp; Built by Kavindya © 2026</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
