@@ -239,47 +239,47 @@ document.addEventListener('DOMContentLoaded', () => {
     const ctx = canvas.getContext('2d');
     let width, height;
     let particles = [];
-    
+
     function initCanvas() {
       width = canvas.width = canvas.offsetWidth;
       height = canvas.height = canvas.offsetHeight;
       particles = [];
-      const numParticles = Math.floor((width * height) / 15000); 
+      const numParticles = Math.floor((width * height) / 15000);
       for (let i = 0; i < numParticles; i++) {
         particles.push({
           x: Math.random() * width,
           y: Math.random() * height,
-          vx: (Math.random() - 0.5) * 0.4, 
+          vx: (Math.random() - 0.5) * 0.4,
           vy: (Math.random() - 0.5) * 0.4,
           radius: Math.random() * 1.5 + 0.5
         });
       }
     }
-    
+
     function draw() {
       ctx.clearRect(0, 0, width, height);
       ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--color-brand').trim() || '#A855F7';
       ctx.strokeStyle = ctx.fillStyle;
-      
+
       particles.forEach((p, i) => {
         p.x += p.vx;
         p.y += p.vy;
-        
+
         // Bounce off edges
         if (p.x < 0 || p.x > width) p.vx *= -1;
         if (p.y < 0 || p.y > height) p.vy *= -1;
-        
+
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
         ctx.fill();
-        
+
         // Connect lines
         for (let j = i + 1; j < particles.length; j++) {
           const p2 = particles[j];
           const dx = p.x - p2.x;
           const dy = p.y - p2.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
-          
+
           if (dist < 100) {
             ctx.globalAlpha = 1 - (dist / 100);
             ctx.lineWidth = 0.5;
@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       requestAnimationFrame(draw);
     }
-    
+
     initCanvas();
     draw();
     window.addEventListener('resize', initCanvas);
@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function type() {
       const currentWord = words[wordIndex];
-      
+
       if (isDeleting) {
         typewriterText.textContent = currentWord.substring(0, charIndex - 1);
         charIndex--;
@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       setTimeout(type, timeout);
     }
-    
+
     // Start typing
     setTimeout(type, 1000); // initial delay
   }
